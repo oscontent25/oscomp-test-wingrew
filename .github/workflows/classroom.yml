@@ -71,6 +71,7 @@ jobs:
           echo loongarch64_output.txt >> output.txt
           echo aarch64_output.txt >> output.txt
           echo x86_64_output.txt >> output.txt
+          echo output.txt
           
       - name: Download EvaluationScript
         run: |
