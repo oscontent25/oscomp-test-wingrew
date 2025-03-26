@@ -87,30 +87,30 @@ jobs:
         with:
           outputfile: x86_64_output.txt
           scriptPath: .github/classroom/glibc-basic
-      - name: riscvglibclibctest-test
-        uses: oscontent25/os-autograding@master
-        id: riscvglibclibctest-test
-        with:
-          outputfile: riscv64_output.txt
-          scriptPath: .github/classroom/glibc-libctest
-      - name: loongarchglibclibctest-test
-        uses: oscontent25/os-autograding@master
-        id: loongarchglibclibctest-test
-        with:
-          outputfile: loongarch64_output.txt
-          scriptPath: .github/classroom/glibc-libctest
-      - name: aarchglibclibctest-test
-        uses: oscontent25/os-autograding@master
-        id: aarchglibclibctest-test
-        with:
-          outputfile: aarch64_output.txt
-          scriptPath: .github/classroom/glibc-libctest
-      - name: x86glibclibctest-test
-        uses: oscontent25/os-autograding@master
-        id: x86glibclibctest-test
-        with:
-          outputfile: x86_64_output.txt
-          scriptPath: .github/classroom/glibc-libctest
+      # - name: riscvglibclibctest-test
+      #   uses: oscontent25/os-autograding@master
+      #   id: riscvglibclibctest-test
+      #   with:
+      #     outputfile: riscv64_output.txt
+      #     scriptPath: .github/classroom/glibc-libctest
+      # - name: loongarchglibclibctest-test
+      #   uses: oscontent25/os-autograding@master
+      #   id: loongarchglibclibctest-test
+      #   with:
+      #     outputfile: loongarch64_output.txt
+      #     scriptPath: .github/classroom/glibc-libctest
+      # - name: aarchglibclibctest-test
+      #   uses: oscontent25/os-autograding@master
+      #   id: aarchglibclibctest-test
+      #   with:
+      #     outputfile: aarch64_output.txt
+      #     scriptPath: .github/classroom/glibc-libctest
+      # - name: x86glibclibctest-test
+      #   uses: oscontent25/os-autograding@master
+      #   id: x86glibclibctest-test
+      #   with:
+      #     outputfile: x86_64_output.txt
+      #     scriptPath: .github/classroom/glibc-libctest
       - name: riscvglibclua-test
         uses: oscontent25/os-autograding@master
         id: riscvglibclua-test
@@ -183,30 +183,30 @@ jobs:
         with:
           outputfile: x86_64_output.txt
           scriptPath: .github/classroom/glibc-iozone
-      # - name: riscvmuslbasic-test
-      #   uses: oscontent25/os-autograding@master
-      #   id: riscvmuslbasic-test
-      #   with:
-      #     outputfile: riscv64_output.txt
-      #     scriptPath: .github/classroom/musl-basic
-      # - name: loongarchmuslbasic-test
-      #   uses: oscontent25/os-autograding@master
-      #   id: loongarchmuslbasic-test
-      #   with:
-      #     outputfile: loongarch64_output.txt
-      #     scriptPath: .github/classroom/musl-basic
-      # - name: aarchmuslbasic-test
-      #   uses: oscontent25/os-autograding@master
-      #   id: aarchmuslbasic-test
-      #   with:
-      #     outputfile: aarch64_output.txt
-      #     scriptPath: .github/classroom/musl-basic
-      # - name: x86muslbasic-test
-      #   uses: oscontent25/os-autograding@master
-      #   id: x86muslbasic-test
-      #   with:
-      #     outputfile: x86_64_output.txt
-      #     scriptPath: .github/classroom/musl-basic
+      - name: riscvmuslbasic-test
+        uses: oscontent25/os-autograding@master
+        id: riscvmuslbasic-test
+        with:
+          outputfile: riscv64_output.txt
+          scriptPath: .github/classroom/musl-basic
+      - name: loongarchmuslbasic-test
+        uses: oscontent25/os-autograding@master
+        id: loongarchmuslbasic-test
+        with:
+          outputfile: loongarch64_output.txt
+          scriptPath: .github/classroom/musl-basic
+      - name: aarchmuslbasic-test
+        uses: oscontent25/os-autograding@master
+        id: aarchmuslbasic-test
+        with:
+          outputfile: aarch64_output.txt
+          scriptPath: .github/classroom/musl-basic
+      - name: x86muslbasic-test
+        uses: oscontent25/os-autograding@master
+        id: x86muslbasic-test
+        with:
+          outputfile: x86_64_output.txt
+          scriptPath: .github/classroom/musl-basic
       # - name: riscvmusllibctest-test
       #   uses: oscontent25/os-autograding@master
       #   id: riscvmusllibctest-test
@@ -311,10 +311,10 @@ jobs:
           LOONGARCHGLIBCBASIC-TEST_RESULTS: "${{steps.loongarchglibcbasic-test.outputs.result}}"
           AARCHGLIBCBASIC-TEST_RESULTS: "${{steps.aarchglibcbasic-test.outputs.result}}"
           X86GLIBCBASIC-TEST_RESULTS: "${{steps.x86glibcbasic-test.outputs.result}}"
-          RISCVGLIBCLIBCTEST-TEST_RESULTS: "${{steps.riscvglibclibctest-test.outputs.result}}"
-          LOONGARCHGLIBCLIBCTEST-TEST_RESULTS: "${{steps.loongarchglibclibctest-test.outputs.result}}"
-          AARCHGLIBCLIBCTEST-TEST_RESULTS: "${{steps.aarchglibclibctest-test.outputs.result}}"
-          X86GLIBCLIBCTEST-TEST_RESULTS: "${{steps.x86glibclibctest-test.outputs.result}}"
+          # RISCVGLIBCLIBCTEST-TEST_RESULTS: "${{steps.riscvglibclibctest-test.outputs.result}}"
+          # LOONGARCHGLIBCLIBCTEST-TEST_RESULTS: "${{steps.loongarchglibclibctest-test.outputs.result}}"
+          # AARCHGLIBCLIBCTEST-TEST_RESULTS: "${{steps.aarchglibclibctest-test.outputs.result}}"
+          # X86GLIBCLIBCTEST-TEST_RESULTS: "${{steps.x86glibclibctest-test.outputs.result}}"
           RISCVGLIBCLUA-TEST_RESULTS: "${{steps.riscvglibclua-test.outputs.result}}"
           LOONGARCHGLIBCLUA-TEST_RESULTS: "${{steps.loongarchglibclua-test.outputs.result}}"
           AARCHGLIBCLUA-TEST_RESULTS: "${{steps.aarchglibclua-test.outputs.result}}"
@@ -327,10 +327,10 @@ jobs:
           LOONGARCHGLIBCIOZONE-TEST_RESULTS: "${{steps.loongarchglibciozone-test.outputs.result}}"
           AARCHGLIBCIOZONE-TEST_RESULTS: "${{steps.aarchglibciozone-test.outputs.result}}"
           X86GLIBCIOZONE-TEST_RESULTS: "${{steps.x86glibciozone-test.outputs.result}}"
-          # RISCVMUSLBASIC-TEST_RESULTS: "${{steps.riscvmuslbasic-test.outputs.result}}"
-          # LOONGARCHMUSLBASIC-TEST_RESULTS: "${{steps.loongarchmuslbasic-test.outputs.result}}"
-          # AARCHMUSLBASIC-TEST_RESULTS: "${{steps.aarchmuslbasic-test.outputs.result}}"
-          # X86MUSLBASIC-TEST_RESULTS: "${{steps.x86muslbasic-test.outputs.result}}"
+          RISCVMUSLBASIC-TEST_RESULTS: "${{steps.riscvmuslbasic-test.outputs.result}}"
+          LOONGARCHMUSLBASIC-TEST_RESULTS: "${{steps.loongarchmuslbasic-test.outputs.result}}"
+          AARCHMUSLBASIC-TEST_RESULTS: "${{steps.aarchmuslbasic-test.outputs.result}}"
+          X86MUSLBASIC-TEST_RESULTS: "${{steps.x86muslbasic-test.outputs.result}}"
           # RISCVMUSLLIBCTEST-TEST_RESULTS: "${{steps.riscvmusllibctest-test.outputs.result}}"
           # LOONGARCHMUSLLIBCTEST-TEST_RESULTS: "${{steps.loongarchmusllibctest-test.outputs.result}}"
           # AARCHMUSLLIBCTEST-TEST_RESULTS: "${{steps.aarchmusllibctest-test.outputs.result}}"
@@ -349,7 +349,7 @@ jobs:
           # X86MUSLIOZONE-TEST_RESULTS: "${{steps.x86musliozone-test.outputs.result}}"
 
         with:
-          runners: riscvglibcbasic-test,loongarchglibcbasic-test,aarchglibcbasic-test,x86glibcbasic-test,riscvglibclibctest-test,loongarchglibclibctest-test,aarchglibclibctest-test,x86glibclibctest-test,riscvglibclua-test,loongarchglibclua-test,aarchglibclua-test,x86glibclua-test,riscvglibcbusybox-test,loongarchglibcbusybox-test,aarchglibcbusybox-test,x86glibcbusybox-test,riscvglibciozone-test,loongarchglibciozone-test,aarchglibciozone-test,x86glibciozone-test
+          runners: riscvglibcbasic-test,loongarchglibcbasic-test,aarchglibcbasic-test,x86glibcbasic-test,riscvglibclua-test,loongarchglibclua-test,aarchglibclua-test,x86glibclua-test,riscvglibcbusybox-test,loongarchglibcbusybox-test,aarchglibcbusybox-test,x86glibcbusybox-test,riscvglibciozone-test,loongarchglibciozone-test,aarchglibciozone-test,x86glibciozone-test,riscvmuslbasic-test,loongarchmuslbasic-test,aarchmuslbasic-test,x86muslbasic-test
           token: ${{ secrets.GITHUB_TOKEN }}
 
         
