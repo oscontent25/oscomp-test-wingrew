@@ -2,7 +2,7 @@ name: Autograding Tests
 on: 
   push:
     branches:
-      - main
+      - main 
     # paths-ignore:
     #   - '.github/**'
 env:
