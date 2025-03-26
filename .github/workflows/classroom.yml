@@ -67,11 +67,11 @@ jobs:
           make oscomp_run ARCH=x86_64 BLK=y NET=y FEATURES=fp_simd,lwext4_rs ACCEL=n >> x86_64_output.txt || true
           echo 'end---x86_64' >> x86_64_output.txt
           touch output.txt
-          echo riscv64_output.txt >> output.txt
-          echo loongarch64_output.txt >> output.txt
-          echo aarch64_output.txt >> output.txt
-          echo x86_64_output.txt >> output.txt
-          echo output.txt
+          cat riscv64_output.txt >> output.txt
+          cat loongarch64_output.txt >> output.txt
+          cat aarch64_output.txt >> output.txt
+          cat x86_64_output.txt >> output.txt
+          cat output.txt
           
       - name: Download EvaluationScript
         run: |
