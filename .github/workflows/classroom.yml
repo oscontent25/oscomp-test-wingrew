@@ -4,7 +4,7 @@ on:
     branches:
       - main 
     # paths-ignore:
-    #   - '.github/**'
+    #   - '.github/**' 
 env:
   IMG_URL_riscv64: https://github.com/Azure-stars/testsuits-for-oskernel/releases/download/v0.1/sdcard-riscv64.img.gz # 镜像url
   IMG_URL_loongarch64: https://github.com/Azure-stars/testsuits-for-oskernel/releases/download/v0.1/sdcard-loongarch64.img.gz # 镜像url
