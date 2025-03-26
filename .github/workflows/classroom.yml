@@ -305,7 +305,7 @@ jobs:
       #     scriptPath: .github/classroom/musl-iozone
       
       - name: Autograding Reporter
-        uses: classroom-resources/autograding-grading-reporter@v1
+        uses: oscontent25/autograding-grading-reporter@v1
         env:
           RISCVGLIBCBASIC-TEST_RESULTS: "${{steps.riscvglibcbasic-test.outputs.result}}"
           LOONGARCHGLIBCBASIC-TEST_RESULTS: "${{steps.loongarchglibcbasic-test.outputs.result}}"
